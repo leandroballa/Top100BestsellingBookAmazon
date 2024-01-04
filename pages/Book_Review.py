@@ -1,5 +1,13 @@
+#################################################
+#                                               #
+#               Shows the Reviews               #
+#              by a filter per Title            #
+#                                               #
+#################################################
 import streamlit as st
 import pandas as pd
+
+st.set_page_config(layout="wide", page_title="Book Review")
 
 df_reviews = pd.read_csv("datasets/customer reviews.csv")
 df_top100 = pd.read_csv("datasets/Top-100 Trending Books.csv")
