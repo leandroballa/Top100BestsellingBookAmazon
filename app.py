@@ -1,11 +1,12 @@
 #################################################
 #                                               #
 #               Main Page                       #
-#       Shows Book when you can filter          #
-#       by price. Also it is possible           #
-#       see the amount of books published       #
-#       by year and the amount of book by       #
-#       price                                   #
+#       Shows Top 100 Bestselling Book          #
+#   Reviews on Amazon and you can filter        #
+#   by price. Also, it is possible to see       #
+#   the number of books published by year       #
+#       nd the number of books by price         #
+#                                               #
 #################################################
 import streamlit as st
 import pandas as pd

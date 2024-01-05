@@ -1,7 +1,8 @@
 #################################################
 #                                               #
-#               Shows the Reviews               #
-#              by a filter per Title            #
+#               Display the reviews             #
+#           based on a filter for each          #
+#                       title.                  #
 #                                               #
 #################################################
 import streamlit as st
