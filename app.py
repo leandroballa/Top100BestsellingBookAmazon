@@ -21,12 +21,12 @@ price_min = df_top100["book price"].min()
 max_price = st.sidebar.slider("Price Range", price_min, price_max, price_max)
 
 df_books = df_top100[df_top100["book price"] <= max_price]
+df_books = df_books.drop("url", 1)
 
-with st.container():
-    df_books
+df_books
 
-fig = px.bar(df_books["year of publication"].value_counts())
-fig2 = px.histogram(df_books["book price"])
+fig = px.bar(df_books["year of publication"].value_counts(), title="Amount of Book Publicated by Year")
+fig2 = px.histogram(df_books["book price"], title="Amount of Books by Price", text_auto=True)
 
 col1, col2 = st.columns(2)
 
