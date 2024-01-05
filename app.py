@@ -26,7 +26,7 @@ df_books = df_books.drop("url", 1)
 
 df_books
 
-fig = px.bar(df_books["year of publication"].value_counts(), title="Amount of Book Publicated by Year")
+fig = px.bar(df_books["year of publication"].value_counts(), title="Amount of Books Publicated by Year")
 fig2 = px.histogram(df_books["book price"], title="Amount of Books by Price", text_auto=True)
 
 col1, col2 = st.columns(2)
